@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-Restaurants</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="main">
+
+    <!-- Navbar -->
+    <div class="navbar">
+
+        <div class="nav-1">
+
+            <div class="logo">S-Restaurants</div>
+
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Location">Location</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+
+        </div>
+
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    </div>
+
+    <!-- Hero -->
+    <div class="hero">
+
+        <div class="left">
+            <div class="left1">Are You Hungry?</div>
+            <div class="left2">Don't Wait</div>
+            <div class="left3">Let's Start Ordering Food Now</div>
+            <button class="left4">Order Now</button>
+        </div>
+
+        <div id="food">
+            <img id="foodImage" src="images/food.png" alt="Food">
+        </div>
+
+        <div class="items">
+            <div id="food1"></div>
+            <div id="food2"></div>
+            <div id="food3"></div>
+            <div id="food4"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+const foodImage = document.getElementById("foodImage");
+
+document.getElementById("food1").addEventListener("click", () => {
+    foodImage.src = "images/food1.png";
+});
+
+document.getElementById("food2").addEventListener("click", () => {
+    foodImage.src = "images/food2.png";
+});
+
+document.getElementById("food3").addEventListener("click", () => {
+    foodImage.src = "images/food3.png";
+});
+
+document.getElementById("food4").addEventListener("click", () => {
+    foodImage.src = "images/food4.png";
+});
+
+</script>
+
+</body>
+</html>
